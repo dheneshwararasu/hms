@@ -97,6 +97,13 @@ span.psw {
   cursor: pointer;
 }
 
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -120,6 +127,13 @@ span.psw {
      float: none;
   }
   .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
      width: 100%;
   }
 }
