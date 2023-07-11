@@ -7,7 +7,7 @@ $nric = mysqli_real_escape_string($con, $_POST['nric']);
 $email = mysqli_real_escape_string($con, $_POST['email']);
 $password = mysqli_real_escape_string($con, $_POST['password']);
 
-$sql="INSERT INTO users('nric', 'firstName', 'lastName', 'email', 'password') VALUES('$nric', '$firstName', '$lastName', '$email', '$password')";
+$sql="INSERT INTO users(nric, firstName, lastName, email, pwd) VALUES('$nric', '$firstName', '$lastName', '$email', '$password')";
 
 if (!mysqli_query($con,$sql))
 {
