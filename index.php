@@ -179,14 +179,23 @@ span.psw {
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
+      <label for="firstName"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="firstName" required>
+
+      <label for="lastName"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="lastName" required>
+
+      <label for="nric"><b>NRIC</b></label>
+      <input type="text" placeholder="Enter NRIC" name="nric" required>
+
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <label for="psw-confirm"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
