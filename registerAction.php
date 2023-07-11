@@ -18,4 +18,3 @@ mysqli_close($con);
 $newURL = 'index.php';
 header('Location: '.$newURL);
 ?>
-?>
